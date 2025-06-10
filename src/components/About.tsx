@@ -32,18 +32,18 @@ const About = () => {
   const cards = [
     {
       icon: <FiUser size={24} />,
-      title: 'Experience',
-      description: '5+ years working in web development with a focus on frontend technologies.'
+      title: 'Profile',
+      description: 'Self-taught, project-driven full-stack developer with a focus on building production-grade apps and MVPs.'
     },
     {
       icon: <FiCode size={24} />,
-      title: 'Technologies',
-      description: 'React, TypeScript, Node.js, and modern frontend frameworks.'
+      title: 'Tech Stack',
+      description: 'React, TypeScript, Tailwind, Node.js, Express, MongoDB, MySQL, FastAPI, Docker, CI/CD, and more.'
     },
     {
       icon: <FiAward size={24} />,
-      title: 'Education',
-      description: 'Computer Science degree with continuous learning through online courses.'
+      title: 'Mindset',
+      description: 'I follow agile sprints, optimize for clarity and quality, and believe in lifelong learning through real-world challenges.'
     }
   ];
 
@@ -67,20 +67,25 @@ const About = () => {
             
             <motion.div variants={itemVariants}>
               <p className="text-tertiary mb-4">
-                Hello! I'm John, a passionate web developer with a keen interest in creating beautiful, functional websites and applications. My journey in web development started 5 years ago, and I've been in love with it ever since.
+                Hey! I'm Orlando, a full-stack developer driven by curiosity, clean code, and a deep love for crafting impactful digital experiences. I’m currently focused on building fast, accessible, and scalable web apps using modern technologies.
               </p>
               <p className="text-tertiary mb-4">
-                I specialize in building exceptional digital experiences using modern technologies like React, TypeScript, and Node.js. I'm constantly learning and exploring new technologies to stay at the forefront of web development.
+                I specialize in the frontend/backend intersection — from designing intuitive UIs to building secure, scalable APIs. My journey blends technical depth with real-world projects, and I treat every build like it’s a product, not just a task.
               </p>
               <p className="text-tertiary mb-6">
-                When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new design trends. I believe in continuous learning and pushing the boundaries of what's possible on the web.
+                Beyond code, I’m passionate about strategic learning, entrepreneurship, and solving meaningful problems. I'm always refining my craft and working toward becoming the kind of developer who can turn ambitious ideas into polished products.
               </p>
             </motion.div>
             
             <motion.div variants={itemVariants}>
               <h3 className="text-xl font-semibold text-quaternary mb-4">My Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Node.js', 'Git', 'Responsive Design', 'UI/UX'].map((skill, index) => (
+                {
+                ['React', 'Next.js' ,'TypeScript', 'Tailwind CSS', 'Framer-Motion', 
+                  'Node.js', 'FastAPI', 'Express.js', "SQL", "NoSQL", 
+                  'Git', 'Rest APIs', "CI/CD", 'Docker', "Microservices"
+
+                ].map((skill, index) => (
                   <span 
                     key={index} 
                     className="px-3 py-1 bg-primary border border-secondary text-secondary rounded-full text-sm"
