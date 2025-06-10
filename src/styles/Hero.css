@@ -1,0 +1,105 @@
+/* Hero component styles */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--color-primary);
+  padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 6rem 1.5rem;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-greeting {
+  color: var(--color-secondary);
+  font-family: monospace;
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.hero-name {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-quaternary);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-name {
+    font-size: 4.5rem;
+  }
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-tertiary);
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+.hero-description {
+  color: var(--color-tertiary);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    font-size: 1.25rem;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-text {
+  color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-text span {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+} 

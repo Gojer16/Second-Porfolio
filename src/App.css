@@ -1,0 +1,103 @@
+/* Custom styles that complement Tailwind CSS */
+
+/* Ensure sections have proper spacing and layout */
+.section-padding {
+  padding: 4rem 1rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 6rem 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 6rem 2rem;
+  }
+}
+
+/* Container width that works well across screen sizes */
+.container-width {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .container-width {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .container-width {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Add smooth transitions for interactive elements */
+.hover-transition {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom card styling */
+.card {
+  background-color: rgba(10, 25, 47, 0.5);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(136, 146, 176, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition-property: border-color;
+  transition-duration: 300ms;
+}
+.card:hover {
+  border-color: rgba(100, 255, 218, 0.3);
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure sections take up at least the viewport height and have proper flex layout */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6rem 0;
+  position: relative;
+}
+
+/* Responsive grid layout for components that need it */
+.grid-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .grid-layout {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .grid-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .grid-layout {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Fix for potential overflow issues */
+body, #root {
+  overflow-x: hidden;
+  width: 100%;
+}
