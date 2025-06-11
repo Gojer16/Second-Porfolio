@@ -1,9 +1,7 @@
-# 🌐 Orlando Ascanio — Full-Stack Developer Portfolio
+# 🌐 Orlando Ascanio — Second Developer Portfolio
 
-Welcome to my personal developer portfolio!  
+Welcome to my second developer portfolio!  
 Built to showcase my **skills, projects, and personality** with a professional design and production-grade implementation.
-
-![Portfolio Screenshot](![Uploading image.png…])
 
 ---
 
@@ -18,21 +16,9 @@ I’m on a mission to **build real-world solutions**, master full-stack developm
 
 - 🧱 **Modular & Scalable** React architecture
 - 🎥 **Framer Motion animations** for smooth transitions
-- 🎨 **TailwindCSS** + clean design principles
 - 🔒 **Contact form integration** (Formspree)
 - 🌍 **Fully responsive**, mobile-first layout
 - 🚀 Deployed on **Vercel**
-
----
-
-## 💼 Sections
-
-- **Hero** — Short intro & CTA
-- **About** — Background, values, and story
-- **Projects** — Highlighted real-world work
-- **Skills** — Tools, stacks, and strengths
-- **Contact** — Framer-animated form with live email integration
-- **Socials** — GitHub, LinkedIn, Twitter, Email
 
 ---
 
@@ -40,8 +26,6 @@ I’m on a mission to **build real-world solutions**, master full-stack developm
 
 - **React** + **TypeScript**
 - **Framer Motion** – Animations
-- **TailwindCSS** – Styling
-- **Vite** – Build system
 - **Formspree** – Email integration
 - **Vercel** – Deployment
 
@@ -50,7 +34,8 @@ I’m on a mission to **build real-world solutions**, master full-stack developm
 ## 🧪 Local Setup
 
 ```bash
-git clone https://github.com/Gojer16/your-portfolio-repo.git
-cd your-portfolio-repo
+git clone https://github.com/Gojer16/Second-Porfolio
+cd Second-Porfolio
 npm install
 npm run dev
+
