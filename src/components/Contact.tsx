@@ -1,17 +1,14 @@
 import { motion, useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const [state, handleSubmit] = useForm("xvgrkdkl");
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -36,36 +33,11 @@ const Contact = () => {
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 5000);
-    }, 1500);
-  };
-
   const socialLinks = [
-    { icon: <FiGithub size={20} />, url: "https://github.com", label: "GitHub" },
-    { icon: <FiLinkedin size={20} />, url: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <FiTwitter size={20} />, url: "https://twitter.com", label: "Twitter" },
-    { icon: <FiMail size={20} />, url: "mailto:example@example.com", label: "Email" }
+    { icon: <FiGithub size={20} />, url: "https://github.com/Gojer16", label: "GitHub" },
+    { icon: <FiLinkedin size={20} />, url: "https://www.linkedin.com/in/orlando-ascanio-dev", label: "LinkedIn" },
+    { icon: <FiTwitter size={20} />, url: "https://x.com/Gojer27", label: "Twitter" },
+    { icon: <FiMail size={20} />, url: "mailto:operation927@gmail.com", label: "Email" }
   ];
 
   return (
@@ -83,96 +55,99 @@ const Contact = () => {
               <span className="text-secondary mr-2">04.</span> Get In Touch
             </h2>
             <p className="text-tertiary max-w-2xl mx-auto">
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+              Got a project, idea, or opportunity in mind? I’d love to hear from you. I’m currently open to freelance work, collaborations, or even a quick chat about tech and product building.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold text-quaternary mb-6">Send Me a Message</h3>
-              
-              {submitSuccess ? (
+
+              {state.succeeded ? (
                 <motion.div 
                   className="card border-secondary"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <p className="text-secondary font-medium">Thank you for your message! I'll get back to you soon.</p>
+                  <p className="text-secondary font-medium">Thanks for reaching out! I’ll get back to you as soon as possible.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  <input 
+                    type="text" 
+                    name="_gotcha" 
+                    autoComplete="off" 
+                    tabIndex="-1" 
+                    style={{ display: 'none' }} 
+                  />
                   <div>
                     <label htmlFor="name" className="block text-tertiary mb-2">Name</label>
                     <input
-                      type="text"
                       id="name"
+                      type="text"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       required
                       className="w-full bg-primary/30 border border-tertiary/30 rounded-lg p-3 text-quaternary focus:border-secondary focus:outline-none transition-colors"
                     />
+                    <ValidationError prefix="Name" field="name" errors={state.errors} />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="email" className="block text-tertiary mb-2">Email</label>
                     <input
-                      type="email"
                       id="email"
+                      type="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       required
                       className="w-full bg-primary/30 border border-tertiary/30 rounded-lg p-3 text-quaternary focus:border-secondary focus:outline-none transition-colors"
                     />
+                    <ValidationError prefix="Email" field="email" errors={state.errors} />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-tertiary mb-2">Message</label>
                     <textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleChange}
                       required
                       rows={5}
                       className="w-full bg-primary/30 border border-tertiary/30 rounded-lg p-3 text-quaternary focus:border-secondary focus:outline-none transition-colors"
-                    ></textarea>
+                    />
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                   </div>
-                  
+
                   <motion.button
                     type="submit"
-                    disabled={isSubmitting}
+                    disabled={state.submitting}
                     className="px-6 py-3 bg-transparent border-2 border-secondary text-secondary rounded-lg hover:bg-secondary/10 transition-colors duration-300 disabled:opacity-50"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                    {state.submitting ? 'Sending...' : 'Send Message'}
                   </motion.button>
                 </form>
               )}
             </motion.div>
-            
+
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-semibold text-quaternary mb-6">Connect With Me</h3>
               <div className="card">
                 <p className="text-tertiary mb-6">
-                  Feel free to reach out to me on any of these platforms. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                  Prefer social? I’m active on these platforms — whether it’s about tech, ideas, or collaboration, my inbox is always open.
                 </p>
-                
                 <div className="flex flex-wrap gap-4">
-                  {socialLinks.map((link, index) => (
+                  {socialLinks.map((link, i) => (
                     <a
-                      key={index}
+                      key={i}
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-tertiary hover:text-secondary transition-colors duration-300"
                       aria-label={link.label}
                     >
-                      <span>{link.icon}</span>
-                      <span>{link.label}</span>
+                      {link.icon}
+                      {link.label}
                     </a>
                   ))}
                 </div>
