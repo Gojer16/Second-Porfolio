@@ -1,7 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { FiMail, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
@@ -78,7 +77,7 @@ const Contact = () => {
                     type="text" 
                     name="_gotcha" 
                     autoComplete="off" 
-                    tabIndex="-1" 
+                    tabIndex={-1} 
                     style={{ display: 'none' }} 
                   />
                   <div>

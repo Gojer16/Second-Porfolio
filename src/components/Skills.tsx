@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { FiCode, FiDatabase, FiLayout, FiTool, FiServer } from 'react-icons/fi';
+import { FiDatabase, FiLayout, FiTool, FiServer } from 'react-icons/fi';
 import '../styles/Skills.css';
 
 const Skills = () => {
