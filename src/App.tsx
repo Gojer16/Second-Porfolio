@@ -41,7 +41,7 @@ function App() {
       
       <footer className="py-8 bg-primary text-center text-tertiary text-sm">
         <div className="container-width">
-          <p>© {new Date().getFullYear()} Portfolio. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Orlando Portfolio. All rights reserved.</p>
           <p className="mt-2">Built with React, TypeScript, and Framer Motion</p>
         </div>
       </footer>
