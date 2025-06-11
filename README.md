@@ -3,7 +3,7 @@
 Welcome to my personal developer portfolio!  
 Built to showcase my **skills, projects, and personality** with a professional design and production-grade implementation.
 
-![Portfolio Screenshot](https://your-deployed-screenshot-url.vercel.app) <!-- optional -->
+![Portfolio Screenshot](![Uploading image.png…])
 
 ---
 
