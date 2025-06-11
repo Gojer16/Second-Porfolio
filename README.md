@@ -1,36 +1,56 @@
-# 💬 Contact Section — React + Framer Motion + Formspree
+# 🌐 Orlando Ascanio — Full-Stack Developer Portfolio
 
-A modern, responsive contact form section built with **React**, **TailwindCSS**, **Framer Motion**, and **Formspree**. Designed for freelancers, developers, and portfolio websites — with smooth animations and real-time validation.
+Welcome to my personal developer portfolio!  
+Built to showcase my **skills, projects, and personality** with a professional design and production-grade implementation.
 
-![screenshot](https://your-screenshot-link-if-you-have-one)
-
----
-
-## ✨ Features
-
-- ⚛️ Built with React & TailwindCSS
-- 🎯 Integrated with Formspree (fully functional)
-- 💬 Inline error handling with `ValidationError`
-- ⚡ Smooth entrance animations via Framer Motion
-- 🧠 Minimalist, accessible, mobile-first UI
-- 🔗 Social icons with external profile links
+![Portfolio Screenshot](https://your-deployed-screenshot-url.vercel.app) <!-- optional -->
 
 ---
 
-## 🚀 Technologies Used
+## ✨ About Me
 
-- **React** (TypeScript)
-- **Framer Motion** – animations
-- **TailwindCSS** – styling
-- **Formspree** – form handling and validation
-- **React Icons** – social icons
+I'm Orlando Ascanio — a passionate full-stack developer who loves building clean, purposeful, and deeply-engineered software.  
+I’m on a mission to **build real-world solutions**, master full-stack development, and work with companies or clients worldwide.
 
 ---
 
-## 🛠 Installation
+## 🧠 Highlights
+
+- 🧱 **Modular & Scalable** React architecture
+- 🎥 **Framer Motion animations** for smooth transitions
+- 🎨 **TailwindCSS** + clean design principles
+- 🔒 **Contact form integration** (Formspree)
+- 🌍 **Fully responsive**, mobile-first layout
+- 🚀 Deployed on **Vercel**
+
+---
+
+## 💼 Sections
+
+- **Hero** — Short intro & CTA
+- **About** — Background, values, and story
+- **Projects** — Highlighted real-world work
+- **Skills** — Tools, stacks, and strengths
+- **Contact** — Framer-animated form with live email integration
+- **Socials** — GitHub, LinkedIn, Twitter, Email
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** + **TypeScript**
+- **Framer Motion** – Animations
+- **TailwindCSS** – Styling
+- **Vite** – Build system
+- **Formspree** – Email integration
+- **Vercel** – Deployment
+
+---
+
+## 🧪 Local Setup
 
 ```bash
-git clone https://github.com/your-username/contact-section.git
-cd contact-section
+git clone https://github.com/Gojer16/your-portfolio-repo.git
+cd your-portfolio-repo
 npm install
 npm run dev
