@@ -35,11 +35,11 @@ const Skills = () => {
       title: "Frontend Development",
       icon: <FiLayout size={24} />,
       skills: [
-        { name: "React", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "JavaScript", level: 95 },
-        { name: "HTML & CSS", level: 90 },
-        { name: "Tailwind CSS", level: 85 },
+        { name: "React", level: 65 },
+        { name: "TypeScript", level: 50 },
+        { name: "JavaScript", level: 80 },
+        { name: "HTML & CSS", level: 70 },
+        { name: "Next.js", level: 40 },
       ]
     },
     {
@@ -47,29 +47,33 @@ const Skills = () => {
       icon: <FiServer size={24} />,
       skills: [
         { name: "Node.js", level: 80 },
-        { name: "Express", level: 75 },
-        { name: "RESTful APIs", level: 85 },
-        { name: "GraphQL", level: 70 },
+        { name: "Express", level: 70 },
+        { name: "RESTful APIs", level: 75 },
+        { name: "FastAPI", level: 50 },
+        { name: "Microservices", level: 30 },
+
       ]
     },
     {
       title: "Database & DevOps",
       icon: <FiDatabase size={24} />,
       skills: [
-        { name: "MongoDB", level: 75 },
-        { name: "PostgreSQL", level: 70 },
-        { name: "Docker", level: 65 },
-        { name: "Git", level: 85 },
+        { name: "NoSQL (MongoDB)", level: 75 },
+        { name: "SQL (MySQL)", level: 70 },
+        { name: "Docker", level: 50 },
+        { name: "Git", level: 70 },
+        { name: "Redis", level: 50 },
       ]
     },
     {
       title: "Tools & Others",
       icon: <FiTool size={24} />,
       skills: [
-        { name: "Figma", level: 75 },
-        { name: "Jest", level: 70 },
-        { name: "Webpack", level: 65 },
-        { name: "Responsive Design", level: 90 },
+        { name: "Framer Motion", level: 55 },
+        { name: "Jest", level: 60 },
+        { name: "Agile", level: 80 },
+        { name: "Responsive Design", level: 70 }, 
+        { name: "CI & CD", level: 50 }
       ]
     }
   ];
@@ -89,7 +93,7 @@ const Skills = () => {
               <span className="skills-title-number">03.</span> My Skills
             </h2>
             <p className="skills-description">
-              Here's a breakdown of my technical skills and proficiency levels. I'm constantly learning and improving these skills.
+              A quick look at my tech stack. I focus on building solid, scalable, and user-friendly systems — always refining, always shipping.
             </p>
           </motion.div>
 
