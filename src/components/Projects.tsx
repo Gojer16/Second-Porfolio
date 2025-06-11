@@ -31,30 +31,30 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product filtering, cart functionality, and payment processing.",
-      tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1189&q=80",
-      github: "#",
-      live: "#",
+      title: "Full-Stack School Website",
+      description: "This project is a robust, secure, and scalable full-stack web app designed  specifically designed for a technical school.",
+      tags: ["React","Framer-Motion", "Tailwind CSS", "FastAPI", "MySQL", "API"],
+      image: "/1.jpeg",
+      github: "https://github.com/Gojer16/PaginaEscuela",
+      live: "https://pagina-escuela-seven.vercel.app/",
       reverse: false
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application that helps teams organize and track their projects. Built with React, TypeScript, and Firebase for real-time updates.",
-      tags: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      github: "#",
-      live: "#",
+      title: "Personal Portfolio",
+      description: "A Responsive Personal Portfolio",
+      tags: ["React", "Framer-Motion", "Tailwind CSS"],
+      image: "/2.png",
+      github: "https://github.com/Gojer16/Portfolio",
+      live: "https://portfolio-orlandos-projects-8aa08152.vercel.app/",
       reverse: true
     },
     {
       title: "Weather Dashboard",
       description: "A weather application that provides current and forecasted weather data for any location. Uses OpenWeatherMap API and features a clean, intuitive interface with dynamic backgrounds.",
-      tags: ["JavaScript", "React", "API Integration", "CSS"],
-      image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      github: "#",
-      live: "#",
+      tags: ["React", "API Integration", "CSS"],
+      image: "3.png ",
+      github: "https://github.com/Gojer16/Weather-Dashboard-with-Geolocation",
+      live: "https://v0-weather-app-pi-three.vercel.app/",
       reverse: false
     }
   ];
@@ -74,7 +74,7 @@ const Projects = () => {
               <span className="text-secondary mr-2">02.</span> My Projects
             </h2>
             <p className="text-tertiary max-w-2xl mx-auto">
-              Here are some of my recent projects. Each project is a unique challenge that I've tackled with passion and creativity.
+              Here are some of my recent projects. Each one presents a unique challenge that I’ve approached with a blend of technical expertise and creative problem-solving.
             </p>
           </motion.div>
 
