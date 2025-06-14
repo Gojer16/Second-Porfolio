@@ -32,7 +32,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Full-Stack School Website",
-      description: "This project is a robust, secure, and scalable full-stack web app designed  specifically designed for a technical school.",
+      description: "This project is a robust, secure, and scalable full-stack web app designed specifically designed for a technical school.",
       tags: ["React","Framer-Motion", "Tailwind CSS", "FastAPI", "MySQL", "API"],
       image: "/1.jpeg",
       github: "https://github.com/Gojer16/PaginaEscuela",
@@ -50,7 +50,7 @@ const Projects = () => {
     },
     {
       title: "Weather Dashboard",
-      description: "A weather application that provides current and forecasted weather data for any location. Uses OpenWeatherMap API and features a clean, intuitive interface with dynamic backgrounds.",
+      description: "A weather application that provides current and forecasted weather data for any location. Uses OpenWeatherMap API.",
       tags: ["React", "API Integration", "CSS"],
       image: "3.png ",
       github: "https://github.com/Gojer16/Weather-Dashboard-with-Geolocation",
